@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array type="id" name="listArray">
+        <item>line1</item>
+        <item>line2</item>
+        <item>line3</item>
+        <item>line4</item>
+    </string-array>
+</resources>

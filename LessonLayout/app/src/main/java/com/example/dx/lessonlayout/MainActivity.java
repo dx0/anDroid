@@ -1,10 +1,14 @@
 package com.example.dx.lessonlayout;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity {
+import android.app.Activity;
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ScrollView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -12,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    ListView listView = (ListView) findViewById(R.id.listView1);
+    //String[] listElements = getResources().getStringArray(R.array.listArray);
+    //ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.activity_main,listElements);
 
-    String[] listElements = getResources().getStringArray(R.array.listArray);
 }
