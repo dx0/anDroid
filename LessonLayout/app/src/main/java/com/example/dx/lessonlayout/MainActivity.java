@@ -11,7 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    ListView listView = (ListView)findViewById(R.id.listView1);
+
+    ListView listView = (ListView) findViewById(R.id.listView1);
 
     String[] listElements = getResources().getStringArray(R.array.listArray);
 }
