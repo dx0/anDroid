@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LessonLayout</string>
+    <string-array name="listArray">
+        <item>line1</item>
+        <item>line2</item>
+        <item>line3</item>
+        <item>line4</item>
+    </string-array>
+</resources>
