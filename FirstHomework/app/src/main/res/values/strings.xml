@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FirstHomework</string>
+    <string-array name="textArray">
+        <item>Element1</item>
+        <item>Element2</item>
+        <item>Element3</item>
+        <item>Element4</item>
+        <item>Element5</item>
+        <item>Element6</item>
+        <item>Element7</item>
+        <item>Element8</item>
+        <item>Element9</item>
+        <item>Element10</item>
+    </string-array>
+</resources>
