@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dx.secondhomework.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:minHeight="@android:dimen/app_icon_size"
+        android:numColumns="@integer/grid_rows"
+        android:stretchMode="columnWidth">
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#E8E8E8"
+            android:layout_weight="0.3"
+            android:src="@android:drawable/ic_menu_call"
+            android:clickable="true"
+            android:padding="5dp"
+            android:layout_margin="1dp">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/apps"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#E8E8E8"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="Приложения"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="5dp"
+            android:layout_margin="1dp">
+
+        </TextView>
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="#E8E8E8"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="5dp"
+            android:layout_margin="1dp"></ImageView>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+

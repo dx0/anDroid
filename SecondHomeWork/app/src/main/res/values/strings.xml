@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SecondHomeWork</string>
+    <string name="action_settings">Settings</string>
+    <string name="second_activity">Second activity text</string>
+    <string name="second_title">Second Activity</string>
+</resources>
