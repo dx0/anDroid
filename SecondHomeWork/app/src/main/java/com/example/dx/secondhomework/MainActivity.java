@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void adjustGridView() {
-        gvMain.setColumnWidth(90);
-        gvMain.setHorizontalSpacing(5);
-        gvMain.setVerticalSpacing(5);
+//        gvMain.setColumnWidth(90);
+//        gvMain.setHorizontalSpacing(5);
+//        gvMain.setVerticalSpacing(5);
 
 
     }
@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(intent);
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {

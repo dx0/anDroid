@@ -21,7 +21,10 @@
         android:gravity="center"
         android:minHeight="@android:dimen/app_icon_size"
         android:numColumns="@integer/grid_rows"
-        android:stretchMode="columnWidth">
+        android:stretchMode="columnWidth"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp">
 
     </GridView>
 
