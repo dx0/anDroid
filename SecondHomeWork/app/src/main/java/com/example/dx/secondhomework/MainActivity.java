@@ -1,5 +1,7 @@
 package com.example.dx.secondhomework;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this, R.layout.grid_content, R.id.tvText, data);
         gvMain = (GridView) findViewById(R.id.grid);
         gvMain.setAdapter(adapter);
+
+//        FragmentManager fragmentManager = getFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        GridFragment fragment = new GridFragment();
+//        fragmentTransaction.add(R.id.from_grid,fragment);
+//        fragmentTransaction.commit();
+
     }
 
 
@@ -53,8 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
 
-        Intent startAndroidSettingIntent = new Intent(Settings.ACTION_SETTINGS);
-        startActivity(startAndroidSettingIntent);
+
         if (id == R.id.action_settings) {
             return true;
         }
@@ -74,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(smsIntent);
     }
     public void clicAllApps(View view){
-
+        Intent startAndroidSettingIntent = new Intent(this,SecondActivity.class);
+        startActivity(startAndroidSettingIntent);
     }
 
 }
